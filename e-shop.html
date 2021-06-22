@@ -1,0 +1,3536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-Shop</title>
+    <link rel="icon" href="images/e-shop-icon.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <!-- slider -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+    <link href="css/imagehover.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+</head>
+<body onload="myFunction()">
+    <!-- PreLoader -->
+    <section id="SLoader">
+        <div id="loader"><svg class="pl" width="240" height="240" viewBox="0 0 240 240">
+                <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000"
+                    stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round" />
+                <circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000"
+                    stroke-width="20" stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round" />
+                <circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20"
+                    stroke-dasharray="0 440" stroke-linecap="round" />
+                <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000"
+                    stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round" />
+            </svg></div>
+    </section>
+    <!--  /PreLoader  -->
+
+    <main style="display: none;" id="myLoader" class="animate-bottom">
+        <!-- TOP-BAR -->
+        <section id="top-bar" class="d-flex justify-content-center">
+
+            <div class="container row p-0">
+
+                <!-- FEATURES -->
+                <aside id="features" class="col-12 col-md-6 p-0 d-flex justify-content-center justify-content-md-start">
+
+                    <div class="feature pl-0">
+
+                        <i class="fas fa-truck"></i>
+
+                        <span>Free Shipping</span>
+
+                    </div>
+
+                    <div class="feature">
+
+                        <i class="fas fa-undo-alt"></i>
+
+                        <span>Free Return</span>
+
+                    </div>
+
+                    <div class="feature">
+
+                        <i class="fas fa-dollar-sign"></i>
+
+                        <span>Cash On Delivery</span>
+
+                    </div>
+                    <!--  -->
+                </aside>
+                <!-- /FEATURES -->
+
+                <!-- SERVICES -->
+                <aside id="services" class="col-12 col-md-6 p-0 d-flex justify-content-center  justify-content-md-end">
+
+                    <div class="service">
+
+                        <ul class="m-0">
+
+                            <li>
+
+                                <a>Customer Service</a>
+
+                            </li>
+
+                            <li>
+
+                                <a>Sell with Us</a>
+
+                            </li>
+
+                            <li>
+
+                                <a>Track Orders</a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </aside>
+                <!-- /SERVICES -->
+
+            </div>
+
+        </section>
+        <!-- /TOP-BAR -->
+
+        <!-- HEADER -->
+        <header id="header" class="bg-white pt-3 px-3 px-md-0 position-sticky sticky-top shadow">
+
+            <section class="container px-0 py-0">
+
+                <section
+                    class="px-0 py-0 d-flex flex-wrap justify-content-center justify-content-md-between align-items-center">
+
+                    <!-- LOGO -->
+
+                    <div id="logo" class="col-2 p-0 order-0">
+
+                        <a href="#">
+
+                            <img class="img-fluid" src="images/e-shop-logo.png" alt="e-Shop Logo">
+
+                        </a>
+
+                    </div>
+
+                    <!-- /LOGO -->
+
+                    <!-- SEARCH-BAR -->
+
+                    <div id="search-bar" class="col-12 col-md-6 order-2 order-md-1 pt-4 px-0">
+
+                        <form>
+
+                            <div class="d-flex">
+
+                                <div class="form-group col-9 col-md-10 m-0">
+
+                                    <input class="form-control" type="search" placeholder="What are you looking for?">
+
+                                </div>
+
+                                <button type="submit" class="col-3 col-md-2 btn btn-search mb-3">SEARCH</button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <!-- /SEARCH-BAR -->
+
+                    <div class="col-10 col-md-3 d-flex justify-content-between p-0 order-1 order-md-2">
+
+                        <!-- LANGUAGE -->
+
+                        <div id="language" class="col-4 p-0">
+
+                            <a href="#" class="d-flex justify-content-center">
+
+                                <img src="images/ar.png" class="m-1">
+
+                                <span>العربية</span>
+
+                            </a>
+
+                        </div>
+
+                        <!-- /LANGUAGE -->
+
+                        <!-- LOGIN -->
+
+                        <div id="login" class="col-4 p-0">
+
+                            <div class="dropdown">
+
+                                <a class="dropdown-toggle d-flex justify-content-between" href="#" role="button"
+                                    id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+
+                                    <i class="far fa-user m-1"></i>
+
+                                    <span>Login</span>
+
+                                    <i class="fas fa-angle-down m-1"></i>
+
+                                </a>
+
+
+                                <div class="dropdown-menu relate-login text-center">
+
+                                    <a href="login/index.html" class="btn btn-warning mt-1">LOGIN</a>
+
+                                    <hr>
+
+                                    <div class="text-left">
+
+                                        <div class="dropdown-item d-flex">
+
+                                            <i class="fas fa-box-open my-2"></i>
+
+                                            <a class="dropdown-item" href="#">My Orders</a>
+
+                                        </div>
+
+                                        <div class="dropdown-item d-flex">
+
+                                            <i class="far fa-heart my-2"></i>
+
+                                            <a class="dropdown-item" href="#">My Wishlist</a>
+
+                                        </div>
+
+                                        <div class="dropdown-item d-flex">
+
+                                            <i class="far fa-user my-2"></i>
+
+                                            <a class="dropdown-item" href="#">Account</a>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- /LOGIN -->
+
+                        <!-- CART -->
+
+                        <div id="cart" class="col-3 p-0 text-right">
+
+                            <a href="#">
+
+                                <i class="fas fa-shopping-cart"></i>
+
+                                <span>Cart</span>
+
+                            </a>
+
+                        </div>
+
+                        <!-- /CART -->
+
+                    </div>
+
+                </section>
+
+            </section>
+
+
+        </header>
+        <!-- /HEADER -->
+
+        <!-- navbar -->
+        <div class="menu-container shadow">
+            <div class="menu">
+                <!-- <a href="#" class="logo">Logo</a> -->
+                <ul class="clearfix">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">DEALS</a>
+                        <ul>
+                            <li><a href="#">School</a>
+                                <ul>
+                                    <li><a href="#">Lidership</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Locations</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Study</a>
+                                <ul>
+                                    <li><a href="#">Undergraduate</a></li>
+                                    <li><a href="#">Masters</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Online</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Research</a>
+                                <ul>
+                                    <li><a href="#">Undergraduate research</a></li>
+                                    <li><a href="#">Masters research</a></li>
+                                    <li><a href="#">Funding</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Something</a>
+                                <ul>
+                                    <li><img src="https://placeimg.com/300/200/nature"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ELECTRONICS</a>
+                        <ul>
+                            <li><a href="#">Today</a></li>
+                            <li><a href="#">Calendar</a></li>
+                            <li><a href="#">Sport</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MEN</a>
+                        <ul>
+                            <li><a href="#">School</a>
+                                <ul>
+                                    <li><a href="#">Lidership</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Locations</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Study</a>
+                                <ul>
+                                    <li><a href="#">Undergraduate</a></li>
+                                    <li><a href="#">Masters</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Online</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Study</a>
+
+                                <ul>
+                                    <li><a href="#">Undergraduate</a></li>
+                                    <li><a href="#">Masters</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Online</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Empty sub</a>
+                                <ul>
+                                    <li><img src="https://placeimg.com/300/200/people"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">WOMEN</a>
+                        <ul>
+                            <li><a href="#">School</a>
+                                <ul>
+                                    <li><a href="#">Lidership</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Locations</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Study</a>
+                                <ul>
+                                    <li><a href="#">Undergraduate</a></li>
+                                    <li><a href="#">Masters</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Online</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Study</a>
+
+                                <ul>
+                                    <li><a href="#">Undergraduate</a></li>
+                                    <li><a href="#">Masters</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Online</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Empty sub</a>
+                                <ul>
+                                    <li><img src="https://placeimg.com/300/200/people"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">HOME & KITCHEN</a>
+                        <ul>
+                            <li><a href="#">School</a>
+                                <ul>
+                                    <li><a href="#">Lidership</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Locations</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Study</a>
+                                <ul>
+                                    <li><a href="#">Undergraduate</a></li>
+                                    <li><a href="#">Masters</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Online</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Study</a>
+
+                                <ul>
+                                    <li><a href="#">Undergraduate</a></li>
+                                    <li><a href="#">Masters</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Online</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Empty sub</a>
+                                <ul>
+                                    <li><img src="https://placeimg.com/300/200/people"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">BEAUTY & FRAGRANCE</a>
+                        <ul>
+                            <li><a href="#">School</a>
+                                <ul>
+                                    <li><a href="#">Lidership</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Locations</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Study</a>
+                                <ul>
+                                    <li><a href="#">Undergraduate</a></li>
+                                    <li><a href="#">Masters</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Online</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Study</a>
+
+                                <ul>
+                                    <li><a href="#">Undergraduate</a></li>
+                                    <li><a href="#">Masters</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Online</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Empty sub</a>
+                                <ul>
+                                    <li><img src="https://placeimg.com/300/200/people"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">BABY & TOYS</a>
+                        <ul>
+                            <li><a href="#">School</a>
+                                <ul>
+                                    <li><a href="#">Lidership</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Locations</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Study</a>
+                                <ul>
+                                    <li><a href="#">Undergraduate</a></li>
+                                    <li><a href="#">Masters</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Online</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Study</a>
+
+                                <ul>
+                                    <li><a href="#">Undergraduate</a></li>
+                                    <li><a href="#">Masters</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Online</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Empty sub</a>
+                                <ul>
+                                    <li><img src="https://placeimg.com/300/200/people"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">SPORTS & OUTDOORS</a>
+                        <ul>
+                            <li><a href="#">School</a>
+                                <ul>
+                                    <li><a href="#">Lidership</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Locations</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Study</a>
+                                <ul>
+                                    <li><a href="#">Undergraduate</a></li>
+                                    <li><a href="#">Masters</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Online</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Study</a>
+
+                                <ul>
+                                    <li><a href="#">Undergraduate</a></li>
+                                    <li><a href="#">Masters</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Online</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Empty sub</a>
+                                <ul>
+                                    <li><img src="https://placeimg.com/300/200/people"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">GROCERY</a>
+                        <ul>
+                            <li><a href="#">School</a>
+                                <ul>
+                                    <li><a href="#">Lidership</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Locations</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Study</a>
+                                <ul>
+                                    <li><a href="#">Undergraduate</a></li>
+                                    <li><a href="#">Masters</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Online</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Study</a>
+
+                                <ul>
+                                    <li><a href="#">Undergraduate</a></li>
+                                    <li><a href="#">Masters</a></li>
+                                    <li><a href="#">International</a></li>
+                                    <li><a href="#">Online</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Empty sub</a>
+                                <ul>
+                                    <li><img src="https://placeimg.com/300/200/people"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /navbar -->
+
+        <!-- MAIN -->
+
+        <!-- SLIDER -->
+        <section class="container px-0 py-4">
+
+            <div class="swiper-container">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+
+                        <a>
+
+                            <img src="images/Galaxy S21 Series 5G.jpg">
+
+                        </a>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <a>
+
+                            <img src="images/Tommy Hilfiger.jpg">
+
+                        </a>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <a>
+
+                            <img src="images/Watches.jpg">
+
+                        </a>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <a>
+
+                            <img src="images/American Eagle.jpg">
+
+                        </a>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <a>
+
+                            <img src="images/Vodafone Shop Online.jpg">
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Add Arrows -->
+
+                <div class="slider-arrow swiper-button-next"></div>
+
+                <div class="slider-arrow swiper-button-prev"></div>
+
+                <!-- Add Pagination -->
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span
+                        class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+                        aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0"
+                        role="button" aria-label="Go to slide 2"></span>
+                    <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                        aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0"
+                        role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet"
+                        tabindex="0" role="button" aria-label="Go to slide 5"></span>
+                </div>
+
+            </div>
+
+
+            </div>
+
+        </section>
+        <!-- SLIDER -->
+
+        <!-- Shop popular categories -->
+        <div class="ban-bottom-w3l ma-all">
+            <div class="container">
+
+                <div class="fancy-title title-border title-center mb-4">
+                    <h4>Shop popular categories</h4>
+                </div>
+
+                <div class="col-md-6 ban-bottom float-left">
+                    <div class="ban-top">
+                        <img src="images/t1.jpg" class="img-responsive" alt="">
+                        <div class="ban-text">
+                            <a href="">
+                                <h4>Women
+                                </h4>
+                            </a>
+                        </div>
+                        <!-- <div class="ban-text2 hvr-sweep-to-top">
+                            <h4>50% <span>Off/-</span></h4>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="col-md-6 ban-bottom3 float-left">
+                    <div class="ban-top bant-top2">
+                        <img src="images/h.jpg" class="img-responsive" alt="">
+                        <div class="ban-text1">
+                            <a href="">
+                                <h4>Home & Kitchen
+                                </h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ban-img">
+                        <div class=" ban-bottom1">
+                            <div class="ban-top">
+                                <img src="images/pexels-beata-dudová-234220.jpg" class="img-responsive" alt="">
+                                <div class="ban-text1">
+                                    <a href="">
+                                        <h3>Beauty</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ban-bottom2">
+                            <div class="ban-top">
+                                <img src="images/pexels-life-of-pix-7974.jpg" class="img-responsive" alt="">
+                                <div class="ban-text1">
+                                    <a href="">
+                                        <h3>Electronics</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- /Shop popular categories -->
+
+
+
+        <!-- PRODUCTS RECOMMENDED -->
+        <section class="container cat-3 bg-white">
+            <div class="block-head">
+                <div class="block-title">
+                    <div class="float-right">
+                        <a href="#">SEE ALL <svg class="svg-inline--fa fa-chevron-right fa-w-10" aria-hidden="true"
+                                focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                                </path>
+                            </svg>
+                            <!-- <i class="fas fa-chevron-right"></i> -->
+                        </a>
+                    </div>
+                    <div class="block-title-text text-sm">products recommended</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-chelsey-horne-4590386.jpg"> <img class="pic-2"
+                                    src="images/pexels-chelsey-horne-4590387.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                            <span class="price">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-cottonbro-5026973.jpg">
+                                <img class="pic-2" src="images/pexels-cottonbro-5026973.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Yellow Top</a></h3>
+                            <span class="price">$699.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-beata-dudová-234220.jpg">
+                                <img class="pic-2" src="images/pexels-chelsey-horne-4590387.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                            <span class="price">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-cottonbro-5026973.jpg">
+                                <img class="pic-2" src="images/pexels-cottonbro-5026973.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                            <span class="price">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /PRODUCTS RECOMMENDED -->
+
+        <!-- NEW ARRAIVALLES -->
+        <section>
+            <div class="container recent-arrivals ma-all">
+                <div class="heading heading-flex align-items-center mb-3">
+                    <h2 class="title title-lg">Recent Arrivals</h2>
+                    <!-- End .title -->
+                    <ul class="nav nav-pills nav-border-anim justify-content-center" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link" id="recent-all-link" data-toggle="tab" href="#recent-all-tab" role="tab"
+                                aria-controls="recent-all-tab" aria-selected="true">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="recent-women-link" data-toggle="tab" href="#recent-women-tab"
+                                role="tab" aria-controls="recent-women-tab" aria-selected="false">Women</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="recent-men-link" data-toggle="tab" href="#recent-men-tab" role="tab"
+                                aria-controls="recent-men-tab" aria-selected="false">Men</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="recent-shoes-link" data-toggle="tab" href="#recent-shoes-tab"
+                                role="tab" aria-controls="recent-shoes-tab" aria-selected="false">Shoes & Boots</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End .heading -->
+
+
+                <div class="tab-content">
+                    <div class="tab-pane p-0 fade active" id="recent-all-tab" role="tabpanel"
+                        aria-labelledby="recent-all-link">
+                        <div class="row justify-content-center">
+                            <div class="col-6 col-md-4 col-lg-3">
+
+                                <div class="product-grid">
+                                    <div class="product-image py-2 ">
+
+                                        <a href="# ">
+                                            <img class="pic-1 " src="images/headfone.jpg">
+                                        </a>
+                                        <span class="product-discount-label ">-50%</span>
+
+                                    </div>
+                                    <div class="product-content ">
+
+                                        <h3 class="title ">
+                                            <a href="# "> headfone</a>
+                                        </h3>
+
+                                        <div class="price ">EGP 140
+
+                                            <del>EGP 280</del><br>
+                                        </div>
+                                    </div>
+                                    <ul class="social d-flex ">
+                                        <li><a href=" " data-tip="Quick View "><i class="fa fa-eye "></i></a></li>
+                                        <li><a href=" " data-tip="Wishlist "><i class="fa fa-heart "></i></a></li>
+                                        <li><a href=" " data-tip="add to cart "><i class="fa fa-shopping-cart "></i></a>
+                                        </li>
+                                        <li><a href=" " data-tip="Compare "><i class="fa fa-random "></i></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="product-grid">
+                                    <div class="product-image ">
+
+                                        <a href="# ">
+                                            <img class="pic-1 " src="images/toys.jpg ">
+                                        </a>
+
+                                    </div>
+                                    <div class="product-content ">
+
+                                        <h3 class="title ">
+                                            <a href="# ">toys</a>
+                                        </h3>
+
+                                        <div class="price ">EGP 300
+
+
+                                        </div>
+                                    </div>
+                                    <ul class="social d-flex ">
+                                        <li><a href=" " data-tip="Quick View "><i class="fa fa-eye "></i></a></li>
+                                        <li><a href=" " data-tip="Wishlist "><i class="fa fa-heart "></i></a></li>
+                                        <li><a href=" " data-tip="add to cart "><i class="fa fa-shopping-cart "></i></a>
+                                        </li>
+                                        <li><a href=" " data-tip="Compare "><i class="fa fa-random "></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="product-grid">
+                                    <div class="product-image ">
+
+                                        <a href="# ">
+                                            <img class="pic-1 " src="images/lapdell.webp ">
+                                        </a>
+
+                                    </div>
+                                    <div class="product-content ">
+
+                                        <h3 class="title ">
+                                            <a href="# ">lab</a>
+                                        </h3>
+
+                                        <div class="price ">EGP 10000
+
+
+                                        </div>
+                                    </div>
+                                    <ul class="social d-flex ">
+                                        <li><a href=" " data-tip="Quick View "><i class="fa fa-eye "></i></a></li>
+                                        <li><a href=" " data-tip="Wishlist "><i class="fa fa-heart "></i></a></li>
+                                        <li><a href=" " data-tip="add to cart "><i class="fa fa-shopping-cart "></i></a>
+                                        </li>
+                                        <li><a href=" " data-tip="Compare "><i class="fa fa-random "></i></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane p-0 fade" id="recent-women-tab" role="tabpanel"
+                        aria-labelledby="recent-women-link">
+                        <div class="row justify-content-center">
+
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="product-grid">
+                                    <div class="product-image py-2 ">
+
+                                        <a href="# ">
+                                            <img class="pic-1 " src="images/product-6.jpg">
+                                        </a>
+                                        <span class="product-discount-label ">-50%</span>
+
+                                    </div>
+                                    <div class="product-content ">
+
+                                        <h3 class="title ">
+                                            <a href="# "> Top </a>
+                                        </h3>
+
+                                        <div class="price ">EGP 140
+
+                                            <del>EGP 280</del><br>
+                                        </div>
+                                    </div>
+                                    <ul class="social d-flex ">
+                                        <li><a href=" " data-tip="Quick View "><i class="fa fa-eye "></i></a></li>
+                                        <li><a href=" " data-tip="Wishlist "><i class="fa fa-heart "></i></a></li>
+                                        <li><a href=" " data-tip="add to cart "><i class="fa fa-shopping-cart "></i></a>
+                                        </li>
+                                        <li><a href=" " data-tip="Compare "><i class="fa fa-random "></i></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="product-grid">
+                                    <div class="product-image py-2 ">
+
+                                        <a href="# ">
+                                            <img class="pic-1 " src="images/product-10.jpg">
+                                        </a>
+
+                                    </div>
+                                    <div class="product-content ">
+
+                                        <h3 class="title ">
+                                            <a href="# "> Top </a>
+                                        </h3>
+
+                                        <div class="price ">EGP 140
+
+                                            <del>EGP 280</del><br>
+                                        </div>
+                                    </div>
+                                    <ul class="social d-flex ">
+                                        <li><a href=" " data-tip="Quick View "><i class="fa fa-eye "></i></a></li>
+                                        <li><a href=" " data-tip="Wishlist "><i class="fa fa-heart "></i></a></li>
+                                        <li><a href=" " data-tip="add to cart "><i class="fa fa-shopping-cart "></i></a>
+                                        </li>
+                                        <li><a href=" " data-tip="Compare "><i class="fa fa-random "></i></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="product-grid">
+                                    <div class="product-image py-2 ">
+
+                                        <a href="# ">
+                                            <img class="pic-1 " src="images/product-14.jpg">
+                                        </a>
+
+                                    </div>
+                                    <div class="product-content ">
+
+                                        <h3 class="title ">
+                                            <a href="# "> Top </a>
+                                        </h3>
+
+                                        <div class="price ">EGP 140
+
+                                        </div>
+                                    </div>
+                                    <ul class="social d-flex ">
+                                        <li><a href=" " data-tip="Quick View "><i class="fa fa-eye "></i></a></li>
+                                        <li><a href=" " data-tip="Wishlist "><i class="fa fa-heart "></i></a></li>
+                                        <li><a href=" " data-tip="add to cart "><i class="fa fa-shopping-cart "></i></a>
+                                        </li>
+                                        <li><a href=" " data-tip="Compare "><i class="fa fa-random "></i></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane p-0 fade" id="recent-men-tab" role="tabpanel"
+                        aria-labelledby="recent-men-link">
+                        <div class="row justify-content-center">
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="product-grid">
+                                    <div class="product-image py-2 ">
+
+                                        <a href="# ">
+                                            <img class="pic-1 " src="images/product-1.jpg">
+                                        </a>
+                                        <span class="product-discount-label ">-50%</span>
+
+                                    </div>
+                                    <div class="product-content ">
+
+                                        <h3 class="title ">
+                                            <a href="# "> suit </a>
+                                        </h3>
+
+                                        <div class="price ">EGP 140
+
+                                            <del>EGP 280</del><br>
+                                        </div>
+                                    </div>
+                                    <ul class="social d-flex ">
+                                        <li><a href=" " data-tip="Quick View "><i class="fa fa-eye "></i></a></li>
+                                        <li><a href=" " data-tip="Wishlist "><i class="fa fa-heart "></i></a></li>
+                                        <li><a href=" " data-tip="add to cart "><i class="fa fa-shopping-cart "></i></a>
+                                        </li>
+                                        <li><a href=" " data-tip="Compare "><i class="fa fa-random "></i></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="product-grid">
+                                    <div class="product-image py-2 ">
+
+                                        <a href="# ">
+                                            <img class="pic-1 " src="images/product-4.jpg">
+                                        </a>
+
+                                    </div>
+                                    <div class="product-content ">
+
+                                        <h3 class="title ">
+                                            <a href="# "> coat </a>
+                                        </h3>
+
+                                        <div class="price ">EGP 1400
+
+                                        </div>
+                                    </div>
+                                    <ul class="social d-flex ">
+                                        <li><a href=" " data-tip="Quick View "><i class="fa fa-eye "></i></a></li>
+                                        <li><a href=" " data-tip="Wishlist "><i class="fa fa-heart "></i></a></li>
+                                        <li><a href=" " data-tip="add to cart "><i class="fa fa-shopping-cart "></i></a>
+                                        </li>
+                                        <li><a href=" " data-tip="Compare "><i class="fa fa-random "></i></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="product-grid">
+                                    <div class="product-image py-2 ">
+
+                                        <a href="# ">
+                                            <img class="pic-1 " src="images/61eal8oIvtL._SL1024_.jpg">
+                                        </a>
+                                        <span class="product-discount-label ">-50%</span>
+
+                                    </div>
+                                    <div class="product-content ">
+
+                                        <h3 class="title ">
+                                            <a href="# "> Top </a>
+                                        </h3>
+
+                                        <div class="price ">EGP 140
+
+                                            <del>EGP 280</del><br>
+                                        </div>
+                                    </div>
+                                    <ul class="social d-flex ">
+                                        <li><a href=" " data-tip="Quick View "><i class="fa fa-eye "></i></a></li>
+                                        <li><a href=" " data-tip="Wishlist "><i class="fa fa-heart "></i></a></li>
+                                        <li><a href=" " data-tip="add to cart "><i class="fa fa-shopping-cart "></i></a>
+                                        </li>
+                                        <li><a href=" " data-tip="Compare "><i class="fa fa-random "></i></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane p-0 fade" id="recent-shoes-tab" role="tabpanel"
+                        aria-labelledby="recent-shoes-link">
+                        <div class="row justify-content-center">
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="product-grid">
+                                    <div class="product-image py-2 ">
+
+                                        <a href="# ">
+                                            <img class="pic-1 " src="images/334.jpg">
+                                        </a>
+                                        <span class="product-discount-label ">-20%</span>
+
+                                    </div>
+                                    <div class="product-content ">
+
+                                        <h3 class="title ">
+                                            <a href="# "> sliber </a>
+                                        </h3>
+
+                                        <div class="price ">EGP 200
+
+                                            <del>EGP 280</del><br>
+                                        </div>
+                                    </div>
+                                    <ul class="social d-flex ">
+                                        <li><a href=" " data-tip="Quick View "><i class="fa fa-eye "></i></a></li>
+                                        <li><a href=" " data-tip="Wishlist "><i class="fa fa-heart "></i></a></li>
+                                        <li><a href=" " data-tip="add to cart "><i class="fa fa-shopping-cart "></i></a>
+                                        </li>
+                                        <li><a href=" " data-tip="Compare "><i class="fa fa-random "></i></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="product-grid">
+                                    <div class="product-image py-2 ">
+
+                                        <a href="# ">
+                                            <img class="pic-1 " src="images/3-small.jpg">
+                                        </a>
+
+                                    </div>
+                                    <div class="product-content ">
+
+                                        <h3 class="title ">
+                                            <a href="# "> Sandle</a>
+                                        </h3>
+
+                                        <div class="price ">EGP 350
+
+                                        </div>
+                                    </div>
+                                    <ul class="social d-flex ">
+                                        <li><a href=" " data-tip="Quick View "><i class="fa fa-eye "></i></a></li>
+                                        <li><a href=" " data-tip="Wishlist "><i class="fa fa-heart "></i></a></li>
+                                        <li><a href=" " data-tip="add to cart "><i class="fa fa-shopping-cart "></i></a>
+                                        </li>
+                                        <li><a href=" " data-tip="Compare "><i class="fa fa-random "></i></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+        </section>
+        <!-- /NEW ARRAIVALLES -->
+
+        <!-- DEAL OF THE DAY -->
+        <section class="container cat-3 bg-white ">
+            <div class="block-head ">
+                <div class="block-title ">
+                    <div class="float-right ">
+                        <a href="# ">SEE ALL <i class="fas fa-chevron-right "></i>
+                        </a>
+                    </div>
+                    <div class="block-title-text text-sm ">Top sale</div>
+                </div>
+            </div>
+
+
+            <div class="owl-carousel owl-theme ">
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat3-1.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat-10.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat-11.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat-5.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat-6.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat-11.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- /DEAL OF THE DAY -->
+
+
+        <!-- adds-->
+        <section id="aa-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 sm-6">
+                        <div class="row">
+                            <marquee class="aa-banner-area">
+                                <a href="#"><img src="images/1170x170-bf-week-1024x149.jpg"
+                                        alt="fashion banner img"></a>
+                            </marquee>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/adds-->
+
+
+
+        <!--CAT1-->
+        <section class="container cat-3 bg-white">
+            <div class="block-head">
+                <div class="block-title">
+                    <div class="float-right">
+                        <a href="#">SEE ALL <svg class="svg-inline--fa fa-chevron-right fa-w-10" aria-hidden="true"
+                                focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                                </path>
+                            </svg>
+                            <!-- <i class="fas fa-chevron-right"></i> -->
+                        </a>
+                    </div>
+                    <div class="block-title-text text-sm">ELECTRONICS</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-chelsey-horne-4590386.jpg"> <img class="pic-2"
+                                    src="images/pexels-chelsey-horne-4590387.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                            <span class="price">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-cottonbro-5026973.jpg">
+                                <img class="pic-2" src="images/pexels-cottonbro-5026973.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Yellow Top</a></h3>
+                            <span class="price">$699.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-beata-dudová-234220.jpg">
+                                <img class="pic-2" src="images/pexels-chelsey-horne-4590387.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                            <span class="price">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-cottonbro-5026973.jpg">
+                                <img class="pic-2" src="images/pexels-cottonbro-5026973.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                            <span class="price">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/CAT1-->
+
+        <!-- CAT3 -->
+        <section class="container cat-3 bg-white ">
+            <div class="block-head ">
+                <div class="block-title ">
+                    <div class="float-right ">
+                        <a href="# ">SEE ALL <i class="fas fa-chevron-right "></i>
+                        </a>
+                    </div>
+                    <div class="block-title-text text-sm ">WOMEN'S CARDIGANS</div>
+                </div>
+            </div>
+
+
+            <div class="owl-carousel owl-theme ">
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat3-1.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat-10.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat-11.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat-5.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat-6.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat-11.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- /CAT3 -->
+
+        <!-- BANNER ADDS -->
+        <div class="container my-6">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="block-banner">
+                        <a href="#"><img width="100%" src="images/banner1.png" alt="Banner"></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <div class="block-banner">
+                        <a href="#"><img width="100%" src="images/banner2.png" alt="Banner"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/BANNER ADDS-->
+
+        <!--coming soon--->
+        <div class="blog-home3 py-5">
+            <div class="container">
+                <!-- Row  -->
+
+                <div class="row mt-4">
+                    <!-- Column -->
+                    <div class="col-lg-6">
+                        <div class="card border-0 mb-4">
+                            <a href="#"><img class="card-img-top" src="images/commingsoon/coming0.jpg"
+                                    alt="wrappixel kit"></a>
+                            <div class="date-pos text-center text-white p-3 bg-success-gradiant">OUR SUMMER
+                                COLLECTION
+                                COMMING SOON</div>
+                            <h5 class="font-weight-medium mt-3"><a href="#" class="link text-decoration-none">SEE
+                                    MORE
+                                    OF OUR NEW COLLECTION</a></h5>
+                            <p class="m-t-20">You can relay on our amazing features list and also our customer
+                                services
+                                will be great experience. Lorem ipsum dolor sit amet consectetur. </p>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <!-- Column -->
+                            <div class="col-md-6">
+                                <div class="card border-0 mb-4">
+                                    <a href="#"><img class="card-img-top" src="images/commingsoon/coming3.jpg"
+                                            alt="wrappixel kit"></a>
+                                    <div class="date-pos text-center text-white p-3 bg-success-gradiant"> 19$</div>
+                                    <h6 class="font-weight-medium mt-3"><a href="#" class="link text-decoration-none">
+                                            SEE MORE COMING SHIRTS</a></h6>
+                                </div>
+                            </div>
+                            <!-- Column -->
+                            <div class="col-md-6">
+                                <div class="card border-0 mb-4">
+                                    <a href="#"><img class="card-img-top" src="images/commingsoon/coming4.jpg"
+                                            alt="wrappixel kit"></a>
+                                    <div class="date-pos text-center text-white p-3 bg-success-gradiant">50$</div>
+                                    <h6 class="font-weight-medium mt-3"><a href="#"
+                                            class="link text-decoration-none">SEE M0RE COMING BAGS</a></h6>
+                                </div>
+                            </div>
+                            <!-- Column -->
+                            <div class="col-md-6">
+                                <div class="card border-0 mb-4">
+                                    <a href="#"><img class="card-img-top" src="images/commingsoon/coming1.jpg"
+                                            alt="wrappixel kit"></a>
+                                    <div class="date-pos text-center text-white p-3 bg-success-gradiant">40$</div>
+                                    <h6 class="font-weight-medium mt-3"><a href="#"
+                                            class="link text-decoration-none">SEE M0RE COMING SHOSES</a></h6>
+                                </div>
+                            </div>
+                            <!-- Column -->
+                            <div class="col-md-6">
+                                <div class="card border-0 mb-4">
+                                    <a href="#"><img class="card-img-top" src="images/commingsoon/coming2.jpg"
+                                            alt="wrappixel kit"></a>
+                                    <div class="date-pos text-center text-white p-3 bg-success-gradiant">60$</div>
+                                    <h6 class="font-weight-medium mt-3"><a href="#"
+                                            class="link text-decoration-none">SEE M0RE COMING SHIRTS</a></h6>
+                                </div>
+                            </div>
+                            <!-- Column -->
+                        </div>
+                    </div>
+                    <!-- Column -->
+                </div>
+            </div>
+        </div>
+        <!--/coming soon--->
+
+        <!--Cat 4-->
+        <section class="container cat-3 bg-white">
+            <div class="block-head">
+                <div class="block-title">
+                    <div class="float-right">
+                        <a href="#">SEE ALL <svg class="svg-inline--fa fa-chevron-right fa-w-10" aria-hidden="true"
+                                focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                                </path>
+                            </svg>
+                            <!-- <i class="fas fa-chevron-right"></i> -->
+                        </a>
+                    </div>
+                    <div class="block-title-text text-sm">BEAUTY $ FRAGRANCE</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-chelsey-horne-4590386.jpg"> <img class="pic-2"
+                                    src="images/pexels-chelsey-horne-4590387.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                            <span class="price">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-cottonbro-5026973.jpg">
+                                <img class="pic-2" src="images/pexels-cottonbro-5026973.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Yellow Top</a></h3>
+                            <span class="price">$699.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-beata-dudová-234220.jpg">
+                                <img class="pic-2" src="images/pexels-chelsey-horne-4590387.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                            <span class="price">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-cottonbro-5026973.jpg">
+                                <img class="pic-2" src="images/pexels-cottonbro-5026973.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                            <span class="price">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/Cat 4-->
+
+        <!-- TOP SALES -->
+        <section class="container cat-3 bg-white">
+            <div class="block-head">
+                <div class="block-title">
+                    <div class="float-right">
+                        <a href="#">SEE ALL <svg class="svg-inline--fa fa-chevron-right fa-w-10" aria-hidden="true"
+                                focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                                </path>
+                            </svg>
+                            <!-- <i class="fas fa-chevron-right"></i> -->
+                        </a>
+                    </div>
+                    <div class="block-title-text text-sm">TOP SALES</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-chelsey-horne-4590386.jpg"> <img class="pic-2"
+                                    src="images/pexels-chelsey-horne-4590387.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                            <span class="price">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-cottonbro-5026973.jpg">
+                                <img class="pic-2" src="images/pexels-cottonbro-5026973.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Yellow Top</a></h3>
+                            <span class="price">$699.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-beata-dudová-234220.jpg">
+                                <img class="pic-2" src="images/pexels-chelsey-horne-4590387.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                            <span class="price">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-cottonbro-5026973.jpg">
+                                <img class="pic-2" src="images/pexels-cottonbro-5026973.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                            <span class="price">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/TOP SALES-->
+
+        <!--BEST OFFERS-->
+        <section class="container cat-3 bg-white ">
+            <div class="block-head ">
+                <div class="block-title ">
+                    <div class="float-right ">
+                        <a href="# ">SEE ALL <i class="fas fa-chevron-right "></i>
+                        </a>
+                    </div>
+                    <div class="block-title-text text-sm ">BEST OFFERS</div>
+                </div>
+            </div>
+
+
+            <div class="owl-carousel owl-theme ">
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat3-1.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat-10.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat-11.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat-5.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat-6.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat-11.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add
+                                        Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add
+                                        Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+
+            </div>
+        </section>
+        <!--/BEST OFFERS-->
+
+
+
+        <!-- populer-search -->
+        <section class="container cat-3 bg-white ">
+            <div class="block-head ">
+                <div class="block-title ">
+                    <div class="float-right ">
+                        <a href="# ">SEE ALL <i class="fas fa-chevron-right "></i>
+                        </a>
+                    </div>
+                    <div class="block-title-text text-sm ">popular search</div>
+                </div>
+            </div>
+
+
+            <div class="owl-carousel owl-theme ">
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container populer-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/pop-1.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right populer-product ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container populer-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/pop-2.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <!-- <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div> -->
+                            </div>
+                            <div class="product-right populer-product ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container populer-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/pop-3.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <!-- <span class="new ">New</span> -->
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right populer-product ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container populer-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat3-1.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right populer-product ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container populer-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/pop-1.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right populer-product ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container populer-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/pop-1.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right populer-product ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container populer-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/pop-1.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right populer-product ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container populer-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/pop-1.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right populer-product ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+            </div>
+        </section>
+        <!-- /populer-search -->
+
+        <!-- latest paid -->
+        <section class="container cat-3 bg-white ">
+            <div class="block-head ">
+                <div class="block-title ">
+                    <div class="float-right ">
+                        <a href="# ">SEE ALL <i class="fas fa-chevron-right "></i>
+                        </a>
+                    </div>
+                    <div class="block-title-text text-sm ">latest paid</div>
+                </div>
+            </div>
+
+
+            <div class="owl-carousel owl-theme ">
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container populer-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/Best-Toys-2020.webp "
+                                            alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right populer-product ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container populer-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/pop-2.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <!-- <div class="product-status ">
+                            <span class="new ">New</span>
+                            <span class="sale ">Sale</span>
+                        </div> -->
+                            </div>
+                            <div class="product-right populer-product ">
+                                <div class="product-name ">
+                                    <a href="# ">Men's Wristwatch</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container populer-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/pop-3.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <!-- <span class="new ">New</span> -->
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right populer-product ">
+                                <div class="product-name ">
+                                    <a href="# ">My Way Z Perfume</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container populer-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/cat3-1.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right populer-product ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container populer-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/pop-1.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right populer-product ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container populer-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/pop-1.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right populer-product ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container populer-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/pop-1.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right populer-product ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="item " style="width: 284.5px; ">
+                    <li class="product ">
+                        <div class="product-container populer-container ">
+                            <div class="product-left ">
+                                <div class="product-thumb ">
+                                    <a class="product-img " href="# "><img src="images/pop-1.jpg " alt="Product "></a>
+                                    <a title="Quick View " href="# " class="btn-quick-view ">Quick View</a>
+                                </div>
+                                <div class="product-status ">
+                                    <span class="new ">New</span>
+                                    <span class="sale ">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-right populer-product ">
+                                <div class="product-name ">
+                                    <a href="# ">Cotton Lycra Leggings</a>
+                                </div>
+                                <div class="price-box ">
+                                    <span class="product-price ">$139.98</span>
+                                    <span class="product-price-old ">$169.00</span>
+                                </div>
+                                <div class="product-star ">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fas fa-star-half "></i>
+                                </div>
+                                <div class="product-button ">
+                                    <a class="btn-add-wishlist " title="Add to Wishlist " href="# ">Add Wishlist</a>
+                                    <a class="btn-add-comparre " title="Add to Compare " href="# ">Add Compare</a>
+                                    <a class="button-radius btn-add-cart " title="Add to Cart " href="# ">Buy<span
+                                            class="icon "></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+            </div>
+        </section>
+        <!-- /latest paid -->
+
+
+        <!--kids and toys-->
+        <section class="container cat-3 bg-white">
+            <div class="block-head">
+                <div class="block-title">
+                    <div class="float-right">
+                        <a href="#">SEE ALL <svg class="svg-inline--fa fa-chevron-right fa-w-10" aria-hidden="true"
+                                focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                                </path>
+                            </svg>
+                            <!-- <i class="fas fa-chevron-right"></i> -->
+                        </a>
+                    </div>
+                    <div class="block-title-text text-sm">BABY $ TOYS</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-chelsey-horne-4590386.jpg"> <img class="pic-2"
+                                    src="images/pexels-chelsey-horne-4590387.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                            <span class="price">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-cottonbro-5026973.jpg">
+                                <img class="pic-2" src="images/pexels-cottonbro-5026973.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Yellow Top</a></h3>
+                            <span class="price">$699.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-beata-dudová-234220.jpg">
+                                <img class="pic-2" src="images/pexels-chelsey-horne-4590387.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                            <span class="price">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid2">
+                        <div class="product-image2">
+                            <a href="#">
+                                <img class="pic-1" src="images/pexels-cottonbro-5026973.jpg">
+                                <img class="pic-2" src="images/pexels-cottonbro-5026973.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a>
+                                </li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                            <span class="price">$599.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/kids and toys-->
+
+
+        <!-- satisfied customer-->
+        <section class="pn_reviews my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center pb-5">Reviews of our valuable clients</h1>
+                    </div>
+
+                    <div class="col-md-12 col-lg-4">
+                        <div class="pn_testimonial_box mt-4">
+                            <p class="text-justify">Homework and assignments solutions at Desklib.com are the best.
+                                I
+                                personally feel that they have such an excellent collection of study resources. I'll
+                                surely visit this place again.</p>
+
+                            <div class="row pt-3">
+                                <div class="col-md-6 pn_review_profile"><img
+                                        src="https://desklib.com/static/src/assets/images/v2/profile_1.svg"
+                                        class="border-radius-12 float-right" alt="client image" /> <span> Charles
+                                        Boyle
+                                    </span> </div>
+                                <div class="col-md-6 pn_review_rating d-flex justify-content-end"> 5
+                                    <img class="image-radius aligncenter"
+                                        src="https://desklib.com/static/src/assets/images/v2/star_rating.svg"
+                                        alt="client stars image" /> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="pn_testimonial_box mt-4">
+                            <p class="text-justify">I would like to thank Desklib library. That’s really a great
+                                platform for online study resources. I got the best solutions for my assignment.</p>
+                            <div class="row pt-3">
+                                <div class="col-md-6 pn_review_profile"><img
+                                        src="https://desklib.com/static/src/assets/images/v2/profile_2.svg"
+                                        class="border-radius-12 float-right" alt="client image" /> <span> Gina
+                                        Lannety
+                                    </span> </div>
+                                <div class="col-md-6 pn_review_rating d-flex justify-content-end"> 5 &nbsp; <img
+                                        class="image-radius aligncenter"
+                                        src="https://desklib.com/static/src/assets/images/v2/star_rating.svg"
+                                        alt="client stars image" /> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="pn_testimonial_box mt-4">
+                            <p class="text-justify">Best homework help website hello, my name is Mike I got 75 marks
+                                in
+                                my business research proposal. Humbly thanking you guys from the bottom of my heart!
+                                Thanks a million! </p>
+                            <div class="row pt-3">
+                                <div class="col-md-6 pn_review_profile"><img
+                                        src="https://desklib.com/static/src/assets/images/v2/profile_3.svg"
+                                        class="border-radius-12 float-right" alt="client image" /> <span> Dug Judey
+                                    </span> </div>
+                                <div class="col-md-6 pn_review_rating d-flex justify-content-end"> 5 &nbsp; <img
+                                        class="image-radius aligncenter"
+                                        src="https://desklib.com/static/src/assets/images/v2/star_rating.svg"
+                                        alt="stars image" /> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /satisfied customer -->
+
+
+        <!--/introduction video-->
+        <!-- <section class="intro-video ">
+            <div class="container ">
+                <div id="intro-head " class="d-flex ">
+                    <div class=" col-sm p-0 py-2 text-center ">
+                        <h3 class="m-0 ">INTRODUCTION VIDEO</h3>
+                    </div>
+                </div>
+                <div class="video-container ">
+
+                    <iframe width="100% " height="400 " src="images/vid.mp4 ">
+                    </iframe>
+                </div>
+
+            </div>
+        </section>  -->
+        <!--/introduction video-->
+
+
+
+        <!-- /MAIN -->
+
+        <!-- Footer -->
+        <footer class="page-footer font-small mdb-color pt-4">
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+
+                <!-- Footer links -->
+                <div class="row text-center text-md-left mt-3 pb-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3">
+                        <img class="img-fluid " src="images/e-shop-w-logo.png " alt="e-Shop Logo ">
+                        <div class="footer-social-icon pt-3 ">
+
+                            <div class="social-title ">FOLLOW US</div>
+
+                            <a href="# "><i class="fab fa-facebook "></i></a>
+
+                            <a href="# "><i class="fab fa-instagram "></i></a>
+
+                            <a href="# "><i class="fab fa-twitter "></i></a>
+
+                            <a href="# "><i class="fab fa-linkedin "></i></a>
+
+                        </div>
+
+                        <div class="footer-social-icon pt-3 ">
+                            <div class="social-title ">DOWNLOAD OUR APPS</div>
+                            <a href="# ">
+                                <img src="images/app-store.svg " alt="App Store ">
+                            </a>
+                            <a href="# ">
+                                <img src="images/google-play.svg " alt="Google Play ">
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3 pl-md-4">
+                        <h5 class="text-uppercase mb-2">populer search</h5>
+
+                        <ul class="pl-0 ">
+
+                            <li><a href="# ">Cameras</a></li>
+
+                            <li><a href="# ">Electronics</a></li>
+
+                            <li><a href="# ">TVs</a></li>
+
+                            <li><a href="# ">Supermarket</a></li>
+
+                            <li><a href="# ">Appliances</a></li>
+
+                            <li><a href="# ">Watches</a></li>
+
+                            <li><a href="# ">Mobile Phones</a></li>
+
+                            <li><a href="# ">Fashion</a></li>
+
+                            <li><a href="# ">Printers And Accessories</a></li>
+
+                            <li><a href="# ">Laptop</a></li>
+
+                        </ul>
+
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-2">MY ACCOUNT</h5>
+                        <ul class="pl-0 ">
+                            <li><a href="# ">Log In / Register</a></li>
+                            <li><a href="# ">My Shopping Cart</a></li>
+                            <li><a href="# ">My Orders</a></li>
+                            <li><a href="# ">My Addresses</a></li>
+                            <li><a href="# ">Wish Lists</a></li>
+                            <li><a href="# ">Account Settings</a></li>
+                            <li><a href="# ">Account Summary</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3 pl-md-4">
+                        <h5 class="text-uppercase mb-2">LET US HELP YOU</h5>
+
+                        <ul class="pl-0 ">
+                            <li><a href="# ">Help Center</a></li>
+                            <li><a href="contact-us/contact-us.html">Contact us</a></li>
+                            <li><a href="# ">How to buy on Jumia?</a></li>
+                            <li><a href="# ">How to pay on Jumia?</a></li>
+                            <li><a href="# ">Delivery timelines</a></li>
+                            <li><a href="# ">Return Policy</a></li>
+                            <li><a href="# ">Corporate Services</a></li>
+                            <li><a href="# ">Report a Product</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- Footer links -->
+
+                <hr>
+
+                <!-- Grid row -->
+                <div class="row d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <div class="col-md-7 col-lg-8">
+
+                        <!--Copyright-->
+                        <p class="text-center text-md-left">© 2021 Copyright:
+                            <strong> e-Shop</strong>
+                            </a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-5 col-lg-4 ml-lg-0">
+
+                        <!-- Social buttons -->
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+        </footer>
+        <!-- /Footer -->
+    </main>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- swiper-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js "></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+    <!-- owl -->
+    <script src="plugins/OwlCarousel2-2.3.4/dist/owl.carousel.js "></script>
+    <script src="plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js "></script>
+    <!---coming-->
+    <script src="lib/countdown/jquery.plugin.min.js"></script>
+    <script src="lib/countdown/jquery.countdown.min.js"></script>
+    <script src="js/fontawesome.js "></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
